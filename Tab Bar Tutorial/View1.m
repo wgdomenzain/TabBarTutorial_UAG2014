@@ -26,27 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 - (IBAction)btnSharePressed:(id)sender
 {
     NSString                    *strShareMsg;
     NSArray                     *aShareItems;
-    UIImage                     *imgScreen;
+    UIImage                     *imgShare;
     UIActivityViewController    *actViewController;
 
-    strShareMsg = @"Ya le agarre la onda a iOS";
-    
-    aShareItems = @[imgScreen, strShareMsg];
+    strShareMsg = @"Desde el curso de iOS en la UAG";
+    imgShare    = [UIImage imageNamed:@"playa.png"];
+    aShareItems = @[imgShare, strShareMsg];
     
     actViewController = [[UIActivityViewController alloc] initWithActivityItems:aShareItems applicationActivities:nil];
     
-    [actViewController setCompletionHandler:^(NSString *activityType, BOOL completed) {
-        NSLog(@"%@, %d", activityType, completed);
-    }];
-    
-    actViewController.excludedActivityTypes = [NSArray arrayWithObjects:UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypeAirDrop, UIActivityTypeSaveToCameraRoll, nil];
+    actViewController.excludedActivityTypes = [NSArray arrayWithObjects:UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypeAirDrop, nil];
     
     [self presentViewController:actViewController animated:YES completion:nil];
 }
- */
+
 @end
