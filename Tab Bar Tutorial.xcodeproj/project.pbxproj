@@ -15,6 +15,9 @@
 		D1E0572A19E99E3D00B4C23A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E0572919E99E3D00B4C23A /* Images.xcassets */; };
 		D1E0572D19E99E3D00B4C23A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1E0572B19E99E3D00B4C23A /* LaunchScreen.xib */; };
 		D1E0573919E99E3D00B4C23A /* Tab_Bar_TutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E0573819E99E3D00B4C23A /* Tab_Bar_TutorialTests.m */; };
+		D1E0574419E9A05800B4C23A /* TabBarUAG.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E0574319E9A05800B4C23A /* TabBarUAG.m */; };
+		D1E0574719E9A0C800B4C23A /* View1.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E0574619E9A0C800B4C23A /* View1.m */; };
+		D1E0574A19E9A0DB00B4C23A /* View2.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E0574919E9A0DB00B4C23A /* View2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		D1E0573219E99E3D00B4C23A /* Tab Bar TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tab Bar TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E0573719E99E3D00B4C23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1E0573819E99E3D00B4C23A /* Tab_Bar_TutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tab_Bar_TutorialTests.m; sourceTree = "<group>"; };
+		D1E0574219E9A05800B4C23A /* TabBarUAG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarUAG.h; sourceTree = "<group>"; };
+		D1E0574319E9A05800B4C23A /* TabBarUAG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarUAG.m; sourceTree = "<group>"; };
+		D1E0574519E9A0C800B4C23A /* View1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View1.h; sourceTree = "<group>"; };
+		D1E0574619E9A0C800B4C23A /* View1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View1.m; sourceTree = "<group>"; };
+		D1E0574819E9A0DB00B4C23A /* View2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View2.h; sourceTree = "<group>"; };
+		D1E0574919E9A0DB00B4C23A /* View2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +96,12 @@
 				D1E0571E19E99E3D00B4C23A /* AppDelegate.m */,
 				D1E0572319E99E3D00B4C23A /* ViewController.h */,
 				D1E0572419E99E3D00B4C23A /* ViewController.m */,
+				D1E0574219E9A05800B4C23A /* TabBarUAG.h */,
+				D1E0574319E9A05800B4C23A /* TabBarUAG.m */,
+				D1E0574519E9A0C800B4C23A /* View1.h */,
+				D1E0574619E9A0C800B4C23A /* View1.m */,
+				D1E0574819E9A0DB00B4C23A /* View2.h */,
+				D1E0574919E9A0DB00B4C23A /* View2.m */,
 				D1E0572619E99E3D00B4C23A /* Main.storyboard */,
 				D1E0572919E99E3D00B4C23A /* Images.xcassets */,
 				D1E0572B19E99E3D00B4C23A /* LaunchScreen.xib */,
@@ -222,9 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E0574719E9A0C800B4C23A /* View1.m in Sources */,
 				D1E0571F19E99E3D00B4C23A /* AppDelegate.m in Sources */,
 				D1E0571C19E99E3D00B4C23A /* main.m in Sources */,
+				D1E0574A19E9A0DB00B4C23A /* View2.m in Sources */,
 				D1E0572519E99E3D00B4C23A /* ViewController.m in Sources */,
+				D1E0574419E9A05800B4C23A /* TabBarUAG.m in Sources */,
 				D1E0572219E99E3D00B4C23A /* Tab_Bar_Tutorial.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tab Bar Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tab Bar Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
