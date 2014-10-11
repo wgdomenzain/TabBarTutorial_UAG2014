@@ -1,5 +1,5 @@
 //
-//  View1.h
+//  View3.h
 //  Tab Bar Tutorial
 //
 //  Created by Walter on 11/10/14.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface View1 : UIViewController
-- (IBAction)btnSharePressed:(id)sender;
+@interface View3 : UIViewController
 
 @end

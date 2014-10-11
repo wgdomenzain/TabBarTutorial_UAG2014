@@ -18,6 +18,10 @@
 		D1E0574419E9A05800B4C23A /* TabBarUAG.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E0574319E9A05800B4C23A /* TabBarUAG.m */; };
 		D1E0574719E9A0C800B4C23A /* View1.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E0574619E9A0C800B4C23A /* View1.m */; };
 		D1E0574A19E9A0DB00B4C23A /* View2.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E0574919E9A0DB00B4C23A /* View2.m */; };
+		D1E0574E19E9A7E200B4C23A /* search01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1E0574C19E9A7E200B4C23A /* search01@2x.png */; };
+		D1E0574F19E9A7E200B4C23A /* man01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1E0574D19E9A7E200B4C23A /* man01@2x.png */; };
+		D1E0575219E9A9F300B4C23A /* View3.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E0575119E9A9F300B4C23A /* View3.m */; };
+		D1E0575419E9AB9E00B4C23A /* calendar02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1E0575319E9AB9E00B4C23A /* calendar02@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		D1E0574619E9A0C800B4C23A /* View1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View1.m; sourceTree = "<group>"; };
 		D1E0574819E9A0DB00B4C23A /* View2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View2.h; sourceTree = "<group>"; };
 		D1E0574919E9A0DB00B4C23A /* View2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View2.m; sourceTree = "<group>"; };
+		D1E0574C19E9A7E200B4C23A /* search01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search01@2x.png"; sourceTree = "<group>"; };
+		D1E0574D19E9A7E200B4C23A /* man01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man01@2x.png"; sourceTree = "<group>"; };
+		D1E0575019E9A9F300B4C23A /* View3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View3.h; sourceTree = "<group>"; };
+		D1E0575119E9A9F300B4C23A /* View3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View3.m; sourceTree = "<group>"; };
+		D1E0575319E9AB9E00B4C23A /* calendar02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar02@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +111,8 @@
 				D1E0574619E9A0C800B4C23A /* View1.m */,
 				D1E0574819E9A0DB00B4C23A /* View2.h */,
 				D1E0574919E9A0DB00B4C23A /* View2.m */,
+				D1E0575019E9A9F300B4C23A /* View3.h */,
+				D1E0575119E9A9F300B4C23A /* View3.m */,
 				D1E0572619E99E3D00B4C23A /* Main.storyboard */,
 				D1E0572919E99E3D00B4C23A /* Images.xcassets */,
 				D1E0572B19E99E3D00B4C23A /* LaunchScreen.xib */,
@@ -114,6 +125,7 @@
 		D1E0571919E99E3D00B4C23A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D1E0574B19E9A7D300B4C23A /* img */,
 				D1E0571A19E99E3D00B4C23A /* Info.plist */,
 				D1E0571B19E99E3D00B4C23A /* main.m */,
 			);
@@ -135,6 +147,16 @@
 				D1E0573719E99E3D00B4C23A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1E0574B19E9A7D300B4C23A /* img */ = {
+			isa = PBXGroup;
+			children = (
+				D1E0575319E9AB9E00B4C23A /* calendar02@2x.png */,
+				D1E0574C19E9A7E200B4C23A /* search01@2x.png */,
+				D1E0574D19E9A7E200B4C23A /* man01@2x.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +241,10 @@
 			files = (
 				D1E0572819E99E3D00B4C23A /* Main.storyboard in Resources */,
 				D1E0572D19E99E3D00B4C23A /* LaunchScreen.xib in Resources */,
+				D1E0575419E9AB9E00B4C23A /* calendar02@2x.png in Resources */,
+				D1E0574F19E9A7E200B4C23A /* man01@2x.png in Resources */,
 				D1E0572A19E99E3D00B4C23A /* Images.xcassets in Resources */,
+				D1E0574E19E9A7E200B4C23A /* search01@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E0575219E9A9F300B4C23A /* View3.m in Sources */,
 				D1E0574719E9A0C800B4C23A /* View1.m in Sources */,
 				D1E0571F19E99E3D00B4C23A /* AppDelegate.m in Sources */,
 				D1E0571C19E99E3D00B4C23A /* main.m in Sources */,

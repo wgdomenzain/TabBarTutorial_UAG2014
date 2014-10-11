@@ -10,7 +10,7 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Ej-s5-zb9">
@@ -27,43 +27,72 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-439" y="119"/>
         </scene>
-        <!--View2-->
+        <!--Buscar-->
         <scene sceneID="f8N-pn-QzR">
             <objects>
                 <viewController storyboardIdentifier="View2" id="Jlg-8E-EKS" customClass="View2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wwp-FC-5xp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.85098040100000005" green="0.29019609089999998" blue="0.21960784489999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="hzt-T9-D9M"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <tabBarItem key="tabBarItem" title="Buscar" image="search01.png" id="hzt-T9-D9M"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2DP-oA-wPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="698.66666666666663" y="472.38666666666666"/>
         </scene>
-        <!--View1-->
+        <!--Calendario-->
+        <scene sceneID="wV9-KE-2nF">
+            <objects>
+                <viewController storyboardIdentifier="View3" id="NYF-BB-JHH" customClass="View3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JNR-jZ-bSg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendario" image="calendar02.png" id="eiL-oc-XsR"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lB-IC-HSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="1200"/>
+        </scene>
+        <!--Hombre-->
         <scene sceneID="dtO-lb-jAh">
             <objects>
                 <viewController storyboardIdentifier="View1" id="MLI-W1-QMX" customClass="View1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="seW-Cl-sIh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EiK-eh-8R8">
+                                <rect key="frame" x="113" y="235" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Compartir">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSharePressed:" destination="MLI-W1-QMX" eventType="touchUpInside" id="282-kf-P4o"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.29019609089999998" green="0.54509806630000002" blue="0.96470588450000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="DQC-D0-d4U"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <tabBarItem key="tabBarItem" title="Hombre" image="man01.png" id="DQC-D0-d4U"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vz1-cq-B8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698.66666666666663" y="-324.70666666666665"/>
+            <point key="canvasLocation" x="698" y="-325"/>
         </scene>
         <!--Tab BarUAG-->
         <scene sceneID="0pV-hH-Vge">
@@ -71,7 +100,7 @@
                 <tabBarController storyboardIdentifier="TabBarUAG" id="jBt-Gr-Px1" customClass="TabBarUAG" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ilY-4Q-RAf"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Apt-B1-Ib7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -80,6 +109,7 @@
                     <connections>
                         <segue destination="MLI-W1-QMX" kind="relationship" relationship="viewControllers" id="XW9-Bj-6Rh"/>
                         <segue destination="Jlg-8E-EKS" kind="relationship" relationship="viewControllers" id="PkU-UT-4PR"/>
+                        <segue destination="NYF-BB-JHH" kind="relationship" relationship="viewControllers" id="lg5-Bp-Ntk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCg-ar-QXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -87,6 +117,11 @@
             <point key="canvasLocation" x="134" y="119"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar02.png" width="30" height="30"/>
+        <image name="man01.png" width="30" height="30"/>
+        <image name="search01.png" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

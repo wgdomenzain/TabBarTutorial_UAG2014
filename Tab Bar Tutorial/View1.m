@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[UITabBar appearance] setTintColor:[UIColor redColor]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,13 +27,26 @@
 }
 
 /*
-#pragma mark - Navigation
+- (IBAction)btnSharePressed:(id)sender
+{
+    NSString                    *strShareMsg;
+    NSArray                     *aShareItems;
+    UIImage                     *imgScreen;
+    UIActivityViewController    *actViewController;
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    strShareMsg = @"Ya le agarre la onda a iOS";
+    
+    aShareItems = @[imgScreen, strShareMsg];
+    
+    actViewController = [[UIActivityViewController alloc] initWithActivityItems:aShareItems applicationActivities:nil];
+    
+    [actViewController setCompletionHandler:^(NSString *activityType, BOOL completed) {
+        NSLog(@"%@, %d", activityType, completed);
+    }];
+    
+    actViewController.excludedActivityTypes = [NSArray arrayWithObjects:UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypeAirDrop, UIActivityTypeSaveToCameraRoll, nil];
+    
+    [self presentViewController:actViewController animated:YES completion:nil];
 }
-*/
-
+ */
 @end
